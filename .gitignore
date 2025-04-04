@@ -1,0 +1,12 @@
+# Ignore environment variables
+.env
+
+# Node modules folder (auto-generated, shouldn't be pushed)
+node_modules/
+
+# Log files
+*.log
+
+# OS/System files
+.DS_Store
+Thumbs.db
