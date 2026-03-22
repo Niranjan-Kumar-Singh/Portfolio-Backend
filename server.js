@@ -27,7 +27,7 @@ app.post("/api/contact", async (req, res) => {
       service: "gmail",
       auth: {
         user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS, // app password, not Gmail password
+        pass: process.env.EMAIL_PASS?.replace(/\s+/g, ''), // Auto-strip accidental copied spaces
       },
     });
 
